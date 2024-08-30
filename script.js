@@ -1,5 +1,5 @@
 const container = document.querySelector(".container")
-const n_of_square = 400;
+const num_square = 500;
 const colors = ["green","orange","yellow","red","violet","pink"];
 function randomC(colors){
     return colors[Math.floor(Math.random()*colors.length)]
@@ -13,7 +13,7 @@ function unsetColor(element){
     element.style.boxShadow = "0 0 2px 0 rgba(0,0,0,0.3)";
 }
 
-for(let i=0;i<n_of_square;i++){
+for(let i=0;i<num_square;i++){
     const square = document.createElement("div")
     square.classList.add("square");
     square.addEventListener("mouseover", ()=>{
